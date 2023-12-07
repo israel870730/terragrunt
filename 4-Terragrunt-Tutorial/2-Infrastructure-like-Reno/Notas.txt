@@ -1,0 +1,4 @@
+Aqui voy a simular la misma estructura de carpeta que esta en el proyecto Renovite para terragrunt
+
+Tambien voy a utilizar un solo fichero con todos los input necesarios de los modulos para crear los recursos, 
+como mismo esta en el proyecto Renovite
