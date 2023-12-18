@@ -19,3 +19,7 @@ terragrunt destroy
 # Si quiero ejecutar varios modulos al mismo tiempo
 terragrunt run-all apply
 terragrunt run-all destroy
+
+# Para eliminar la cache de terragrunt
+find ./ -type f -name .terraform.lock.hcl | xargs rm -rf
+find ./ -type d -name .terragrunt-cache | xargs rm -rf
