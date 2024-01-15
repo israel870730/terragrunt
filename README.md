@@ -23,3 +23,7 @@ terragrunt run-all destroy
 # Para eliminar la cache de terragrunt
 find ./ -type f -name .terraform.lock.hcl | xargs rm -rf
 find ./ -type d -name .terragrunt-cache | xargs rm -rf
+
+# Para ver los pod y los nodos al mismo tiempo
+watch -n 1 'kubectl get po -o wide  && kubectl get node'
+watch -n 10 'kubectl get po -A && kubectl get node'
